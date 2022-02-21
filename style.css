@@ -1,0 +1,528 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --colorBlackContent: #242526;
+    --colorBackground: #18191a;
+    --colorLine: #3a3b3c;
+    --colorLineHover: #515253;
+    --colorTextGrey: #a9acb1;
+    --colorTextWhite: #dbdbdb;
+    --colorwhite: #fff;
+    --colorblue: blue;
+}
+
+::placeholder {
+    color: var(--colorTextGrey);
+}
+
+body {
+    background-color: var(--colorBackground);
+}
+
+
+
+/*   ---   NAV PESQUISA  ---   */
+
+header {
+    display: flex;
+    width: 100%;
+    height: 56px;
+    background-color: var(--colorBlackContent);
+    border-bottom: 1px solid var(--colorLine);
+    justify-content: space-between;
+}
+
+#navpesquisa {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#navpesquisa input {
+    height: 40px;
+    width: 245px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--colorLine);
+    margin: 0 4px;
+    padding-left: 37px;
+    font-size: 15px;
+    color: #c6cad1;
+    outline: none;
+    position: relative;
+    right: 17px;
+}
+
+#navpesquisa ion-icon {
+    position: relative;
+    left: 17px;
+    color: var(--colorTextGrey);
+    z-index: 1;
+    height: 19px;
+    width: 19px;
+}
+
+/*   ---   NAV MENU  ---   */
+
+.navmenu {
+    display: flex;
+    align-items: center;
+    height: 56px;
+}
+
+.navmenu ion-icon {
+    color: var(--colorTextGrey);
+    height: 30px;
+    width: 30px;
+    padding: 9px 40px;
+    border-radius: 5px;
+}
+
+.navmenu ion-icon:hover {
+    background-color: var(--colorLine);
+    transition: 0.5s;
+}
+
+/*   ---   NAV CONFIG  ---   */
+
+#navconfig {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    margin: 0 10px;
+}
+
+#navconfig img {
+    height: 35px;
+    border-radius: 50%;
+}
+
+#navconfig p {
+    color: var(--colorTextWhite);
+    font-weight: 550;
+    margin: 0px 20px 0px 5px;
+}
+
+#navconfig ion-icon {
+    color: var(--colorTextGrey);
+    height: 25px;
+    width: 25px;
+    background-color: var(--colorLine);
+    padding: 7px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+#navconfig ion-icon:hover {
+    background-color: var(--colorLineHover);
+}
+
+/*   ---   MAIN   ---   */
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*   ---   CONTAINER LEFT   ---   */
+
+.container {
+    
+    display: flex;
+    justify-content: flex-end;
+    width: 23vw;
+    /*background-color: var(--colorBlackContent);*/
+}
+
+.c-box {
+    position: relative;
+    top: 13px;
+}
+
+.c-line {
+    display: flex;
+    align-items: center;
+    width: 346px;
+    height: 54px;
+    border-radius: 10px;
+}
+.c-line2 {
+    display: flex;
+    align-items: center;
+    width: 330px;
+    height: 30px;
+    border-radius: 7px;
+    margin-left: 19px;
+}
+
+.c-line:hover {
+    background-color: var(--colorBlackContent);
+}
+
+.c-line2:hover {
+    background-color: var(--colorBlackContent);
+}
+
+.c-line img {
+    height: 35px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.c-line2 ion-icon {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 0 10px;
+    color: var(--colorTextGrey);
+}
+
+.c-line p {
+    color: var(--colorTextWhite);
+    font-weight: 600;
+    font-size: 15px;
+}
+.c-line2 p {
+    color: var(--colorTextGrey);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    background-color: var(--colorLine);
+    border-radius: 50%;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon ion-icon {
+    height: 20px;
+    width: 20px;
+    font-weight: 700;
+    color: var(--colorTextGrey);
+}
+
+hr {  
+	border: 0.5px solid var(--colorLine); 
+    margin: 0 10px;
+}
+
+.c-title {
+    color: var(--colorTextGrey);
+    font-size: 12px;
+    font-weight: 100;
+    margin: 15px 10px;
+}
+
+.c-footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 340px;
+    margin-top: 15px;
+}
+
+.c-footer a{
+    font-size: 13px;
+    color: var(--colorTextGrey);
+    text-decoration: none;
+    margin: 3px;
+}
+
+.c-footer a:hover {
+    text-decoration: underline;
+}
+
+/*   ---   CONTAINER CENTER   ---   */
+
+.container-center {
+    width: 38vw;
+    height: 100vh;
+}
+
+.stories {
+    display: flex;
+}
+
+.st-img {
+    background-color: #a9acb1;
+    overflow: hidden;
+    height: 200px;
+    width: 120px;
+    border-radius: 10px;
+    margin: 20px 5px;
+}
+
+.st-img img{
+    position: relative;
+    right: 20%;
+    height: 220px;
+    width: 220px;
+}
+
+.st-img img:hover {
+    transform: scale(1.1);
+}
+
+.center-pesquisa {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--colorBlackContent);
+    border-radius: 10px;
+    padding: 15px 0;
+}
+
+.img-pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.img-pesquisa input {
+   width: 500px;
+   height: 40px;
+   margin: 0 10px;
+   border-radius: 20px;
+   border: none;
+   background-color: var(--colorLine);
+   padding-left: 10px;
+   font-size: 15px;
+   outline: none;
+   color: var(--colorTextGrey);
+}
+
+.img-pesquisa input:hover {
+    background-color: var(--colorLineHover);
+}
+
+.img-pesquisa img {
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.cp-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.cp-container {
+    display: flex;
+    align-items: center;
+    
+}
+
+.cp-container ion-icon {
+    color: #f3425f;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.cp-container p {
+    color: var(--colorTextGrey);
+    font-weight: 600;
+}
+
+.crirar-sala {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+    background-color: var(--colorBlackContent);
+    margin: 15px 0;
+    border-radius: 10px;
+}
+
+.crirar-sala img {
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.btn-sala {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 130px;
+    border: 1px solid #006eff;
+    border-radius: 20px;
+    color: #006eff;
+}
+
+.btn-sala ion-icon {
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+
+.post-padrao {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--colorBlackContent);
+    border-radius: 10px;
+}
+
+.pp-descritivo {
+    color: var(--colorTextWhite);
+    margin: 0 20px 20px 20px;
+}
+
+.pp-titulo {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+.font-pp-p {
+    font-size: 12px;
+}
+
+.pp-titulo img {
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin: 0 10px;
+}
+
+.pp-titulo p {
+    color: var(--colorTextGrey);
+    font-weight: 600;
+}
+
+.img-post img {
+    width: 100%;
+    
+    
+}
+
+.img-content {
+    display: flex;
+    height: 90px;
+    width: 100%;
+    background-color: var(--colorLine);
+    position: relative;
+    bottom: 5px;
+    color: var(--colorTextGrey);
+    line-height: 22px;
+}
+
+.img-descritivo {
+    margin: 15px 0;
+}
+
+.img-descritivo p{
+    font-size: 17px;
+    margin-left: 20px;
+}
+
+.img-descritivo h2 {
+    font-size: 17px;
+    margin-left: 20px;
+    color: var(--colorTextWhite);
+}
+
+.final {
+    height: 100px;
+}
+
+.like {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.like ion-icon {
+    color: #006eff;
+    height: 20px;
+    width: 20px;
+    margin: 0 10px;
+}
+
+.like p {
+    color: var(--colorTextGrey);
+    font-size: 13px;
+}
+
+.f-comentario {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fc-icon {
+    display: flex;
+    align-items: center;
+    color: var(--colorTextGrey);
+    margin: 10px;
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.fc-icon:hover {
+    background-color: var(--colorLineHover);
+}
+
+.fc-icon ion-icon {
+    height: 30px;
+    width: 30px;
+    margin: 0 10px;
+}
+
+/*   ---   CONTAINER RIGHT   ---   */
+
+.c-title2 {
+    color: var(--colorTextGrey);
+    font-size: 12px;
+    font-weight: 100;
+    margin: 15px 10px;
+}
+
+#correcao {
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.patrocinio {
+    display: flex;
+    flex-direction: column;
+}
+
+.anuncio {
+    display: flex;
+    align-items: center;
+    height: 180px;
+    width: 345px;
+    border-radius: 10px;
+}
+
+.anuncio:hover {
+    background-color: var(--colorBlackContent);
+}
+
+.anuncio img {
+    height: 160px;
+    border-radius: 10px;
+    margin: 10px 10px;
+}
+
+.a-descritivo {
+    color: var(--colorwhite);
+}
+
+#txt2 {
+    color: var(--colorTextGrey);
+    font-size: 13px;
+    margin-top: 3px;
+}
