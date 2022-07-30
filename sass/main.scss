@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$colorNav: #242526;
+$bodyColor: #18191a;
+$colorPesquisa: #3a3b3c;
+$colorTxt: #bfc0b8;
+
+body {
+background-color: $bodyColor;
+
+    header{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+        width: 100%;
+        height: 60px;
+        background-color: $colorNav;
+
+        .nav-pesquisa {
+            display: flex;
+            align-items: center;
+            width: 400px;
+
+            img {
+                height: 55px;
+                margin-right: 5px;
+            }
+
+            .material-icons-sharp {
+                color: $colorTxt;
+                position: absolute;
+                left: 85px;
+                font-size: 20px;
+            }
+
+            input {
+                width: 250px;
+                height: 40px;
+                border-radius: 20px;
+                outline: none;
+                border: none;
+                background-color: $colorPesquisa;
+                font-size: 16px;
+                color: $colorTxt;
+                padding-left: 39px;
+            }
+        }
+
+        .nav-icones {
+            width: 500px;
+            display: flex;
+            justify-content: center;
+
+            .material-icons-sharp {
+                color: $colorTxt;
+                padding: 10px 40px;
+                border-radius: 10px;
+                font-size: 30px;
+                margin: 0 1px;
+            }
+
+            .material-icons-sharp:hover {
+                background-color: $colorPesquisa;
+            }   
+        }
+
+        .nav-configs {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 400px;
+
+            .material-icons-sharp {
+                padding: 8px;
+                background-color: $colorPesquisa;
+                border-radius: 50%;
+                margin: 0 4px;
+                color: $colorTxt;
+            }
+
+            img {
+                height: 40px;
+                border-radius: 50%; 
+                margin: 0 4px;
+            }
+        }
+    }
+}
